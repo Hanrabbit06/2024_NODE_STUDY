@@ -11,4 +11,6 @@ app.get('/cute', (req, res)=> {
     res.send('cute rabbit')
 })
 
-app.listen(port)
+app.listen(port, ()=>{
+    console.log('listening on port ${port}')
+})
