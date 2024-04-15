@@ -9,9 +9,9 @@
     <p>나이 : <%= age%></p>
     <h2>보유 기술</h2>
     <ul>
-        <li><%= skills[0] %></li>
-        <li><%= skills[1] %></li>
-        <li><%= skills[2] %></li>
+        <% skills.forEach(skill=> {%>
+            <li><%= skill %> </li>
+        <% })%>
     </ul>
 </body>
 </html>
